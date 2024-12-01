@@ -6,12 +6,12 @@ class Animal {
         this.energia = energiaInicial;
     }
 
-    public comer(quantidade: number): void {
+    comer(quantidade: number): void {
         this.energia += quantidade;
         console.log(`Energia aumentada em ${quantidade}. Energia atual: ${this.energia}`);
     }
 
-    public statusEnergia(): void {
+    statusEnergia(): void {
         console.log(`Nível de energia: ${this.energia}`);
     }
 }
@@ -22,7 +22,7 @@ class Leao extends Animal {
         super(energiaInicial);
     }
 
-    public cacar(): void {
+    cacar(): void {
         const energiaGasta = 10;
         if (this['energia'] >= energiaGasta) {
             console.log("Leão está caçando...");
@@ -40,7 +40,7 @@ class Passaro extends Animal {
         super(energiaInicial);
     }
 
-    public voar(): void {
+    voar(): void {
         console.log("Pássaro está voando...");
         this.comer(5); 
     }

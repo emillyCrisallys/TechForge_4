@@ -9,7 +9,7 @@ class ContaBancaria {
     }
 
     
-    public depositar(valor: number) {
+    depositar(valor: number) {
         if (valor > 0) { 
             this.saldo += valor; 
             console.log(`Depósito de R$${valor} realizado. Novo saldo: R$${this.saldo}`);
@@ -19,7 +19,7 @@ class ContaBancaria {
     }
 
   
-    public sacar(valor: number) {
+    sacar(valor: number) {
         if (valor > 0 && valor <= this.saldo) { 
             this.saldo -= valor; 
             console.log(`Saque de R$${valor} realizado. Novo saldo: R$${this.saldo}`);

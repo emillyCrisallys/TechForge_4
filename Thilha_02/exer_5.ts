@@ -8,12 +8,12 @@ class Agenda {
     }
 
     
-    public adicionarCompromisso(compromisso: string): void {
+    adicionarCompromisso(compromisso: string): void {
         this.compromissos.push(compromisso); 
     }
 
     
-    public listarCompromissos(): void {
+    listarCompromissos(): void {
         if (this.compromissos.length === 0) {
             console.log("Não há compromissos agendados."); 
         } else {

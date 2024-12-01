@@ -7,12 +7,12 @@ class Temperatura {
     }
 
    
-    public paraFahrenheit(): number {
+    paraFahrenheit(): number {
         return (this.valor * 9/5) + 32; 
     }
 
     
-    public paraKelvin(): number {
+    paraKelvin(): number {
         return this.valor + 273.15; 
     }
 }

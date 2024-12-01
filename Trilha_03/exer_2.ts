@@ -45,7 +45,7 @@ class Triangulo extends FiguraGeometrica{
     }
 
     calcularArea(): number {
-        return (this.base * this.altura) / 2; // Área = (base * altura) / 2
+        return (this.base * this.altura) / 2; 
     }
 
 }

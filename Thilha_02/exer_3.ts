@@ -11,7 +11,7 @@ class Produto {
     }
 
     
-    public calcularValorTotalEmEstoque(): number {
+    calcularValorTotalEmEstoque(): number {
         return this.preco * this.quantidade; 
     }
 }

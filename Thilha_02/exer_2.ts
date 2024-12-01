@@ -14,7 +14,7 @@ class Livro {
     }
 
   
-    public marcarComoLido() {
+    marcarComoLido() {
         this.lido = true; 
         console.log(`O livro "${this.titulo}" foi marcado como lido.`);
     }
